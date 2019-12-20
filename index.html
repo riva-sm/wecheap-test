@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wecheap масла</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.png" />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Fancybox styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="header">
+        <div class="container">
+            <!-- header-wrapper -->
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Wecheap">
+                </div>
+                <div class="nav">
+                    <a href="#" class="nav__item">Продукции</a>
+                    <a href="#" class="nav__item">Гарантии</a>
+                    <a href="#" class="nav__item">Доставка</a>
+                    <a href="#" class="nav__item">Контакты</a>
+                </div>
+                <div class="contacts">
+                    <div class="contacts-city"><a href="#">Санкт-Петербург</a></div>
+                    <div class="contacts-phone">
+                        <a href="tel:78124093697" class="contacts-phone-link">+7 (812) 409-36-97</a>
+                        <div class="call-contact">
+                            <!-- Link to open the modal -->
+                            <a href="#callme" class="btn contacts-btn" rel="modal:open">связаться с менеджером</a>
+                        </div>
+
+                        <!-- <button class="btn contacts-btn">связаться с менеджером</button> -->
+                    </div>
+                </div>
+            </div>
+            <!-- // header-wrapper -->
+
+            <!-- Modal HTML embedded directly into document -->
+            <div id="callme" class="modal popup" method="POST">
+
+                <form action="php/mail.php" class="contact-form" method="POST">
+                    <h2 class="contact-form-title">Оставьте заявку</h2>
+
+                    <input type="text" name="Имя" placeholder="Ваше имя" class="contact-input">
+
+                    <input type="tel" name="Телефон" placeholder="Номер телефона" class="contact-input">
+
+                    <button type="submit" value="Отправить" class="btn contact-button">Отправить</button>
+                    <p class="politics">
+                        Нажимая на кнопку вы соглашаетесь
+                        с условиями политики конфиденциальности
+                    </p>
+
+                </form>
+            </div>
+
+            <div class="offer">
+                <!--  header__offer -->
+                <div class="header__offer">
+                    <h1 class="header__title">Оригинальные моторные масла <span>оптом</span></h1>
+                    <p class="header__text">Бесплатная доставка от 1-го дня по России и СНГ</p>
+                    <button class="btn header__offer-btn">выбрать масло</button>
+                </div>
+                <!-- // header__offer -->
+                <div class="action">
+                    <div class="action-item">
+                        <div class="action-item-text">
+                            <div class="action-text --action-row-1">
+                                каждая
+                            </div>
+                            <div class="action-text --action-row-2">
+                                11-я
+                            </div>
+                            <div class="action-text --action-row-3">
+                                бочка
+                            </div>
+                            <div class="action-text --action-row-4">
+                                в подарок!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- check-section -->
+            <div class="check-section">
+                <h2 class="heading-2 check-title">Проверьте <span>наличие товара</span> онлайн</h2>
+                <form action="#" class="check-form">
+                    <!-- <div class="decor"> -->
+                    <div class="oil-item-1"></div>
+                    <div class="oil-item-2"></div>
+                    <div class="oil-item-3"></div>
+                    <div class="oil-item-4"></div>
+                    <div class="oil-item-5"></div>
+                    <!-- </div> -->
+
+                    <div class="question-progress">
+                        <div class="question-text">
+                            Вопрос 1 из 5
+                        </div>
+                    </div>
+                    <div class="question-list">
+                        <h3 class="question-heading">
+                            1. Выберите тип масла
+                        </h3>
+                        <ul class="radio-list">
+                            <!-- radio-list__item -->
+                            <li class="radio-list__item">
+                                <input class="radio-list" type="radio" name="type-oil" id="oil-1" checked>
+                                <label for="oil-1" class="radio-list__label">Минеральное</label>
+                            </li>
+                            <!-- // radio-list__item -->
+                            <li class="radio-list__item">
+                                <input class="radio-list" type="radio" name="type-oil" id="oil-2">
+                                <label for="oil-2" class="radio-list__label">Полусинтетика</label>
+                            </li>
+                            <!-- // radio-list__item -->
+                            <li class="radio-list__item">
+                                <input class="radio-list" type="radio" name="type-oil" id="oil-3">
+                                <label for="oil-3" class="radio-list__label">Синтетика</label>
+                            </li>
+                            <!-- // radio-list__item -->
+                        </ul>
+
+                        <div class="toggles">
+                            <div class="toggle-back">предыдущий вопрос</div>
+                            <button class="btn toggle-next">Следующий вопрос</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <!-- /.check-section -->
+        </div>
+    </header>
+    <!-- // header  -->
+    <!-- reviews -->
+    <section class="reviews">
+        <h2 class="heading-2 reviews-title"><span>Отзывы</span> тех, кто уже с нами</h2>
+        <div class="slider owl-carousel owl-theme">
+            <!-- slider-item -->
+            <div class="slider__item">
+                <a data-fancybox href="https://www.youtube.com/watch?v=RPyHpO9aB5M" class="play-button"></a>
+                <a data-fancybox href="https://www.youtube.com/watch?v=RPyHpO9aB5M">
+                    <img src="img/videos/prev-1.jpg" alt="">
+                </a>
+
+            </div>
+            <!-- // slider-item -->
+            <!-- slider-item -->
+            <div class="slider__item">
+                <a data-fancybox href="https://www.youtube.com/watch?v=VnlKe1GdM4E" class="play-button"></a>
+                <a data-fancybox href="https://www.youtube.com/watch?v=VnlKe1GdM4E">
+                    <img src="img/videos/prev-2.jpg" alt="">
+                </a>
+
+            </div>
+            <!-- // slider-item -->
+            <!-- slider-item -->
+            <div class="slider__item">
+                <a data-fancybox href="https://www.youtube.com/watch?v=pMmJVL79WxM" class="play-button"></a>
+                <a data-fancybox href="https://www.youtube.com/watch?v=pMmJVL79WxM">
+                    <img src="img/videos/prev-3.jpg" alt="">
+                </a>
+
+            </div>
+            <!-- // slider-item -->
+            <!-- slider-item -->
+            <div class="slider__item">
+                <a data-fancybox href="https://www.youtube.com/watch?v=LPzUCQ7tDfA" class="play-button"></a>
+                <a data-fancybox href="https://www.youtube.com/watch?v=LPzUCQ7tDfA">
+                    <img src="img/videos/prev-1.jpg" alt="">
+                </a>
+
+            </div>
+            <!-- // slider-item -->
+            <!-- slider-item -->
+            <div class="slider__item">
+                <a data-fancybox href="https://www.youtube.com/watch?v=WPBPZMb09Ng" class="play-button"></a>
+                <a data-fancybox href="https://www.youtube.com/watch?v=WPBPZMb09Ng">
+                    <img src="img/videos/prev-2.jpg" alt="">
+                </a>
+
+            </div>
+            <!-- // slider-item -->
+            <!-- slider-item -->
+            <div class="slider__item">
+                <a data-fancybox href="https://www.youtube.com/watch?v=7ii41wJ9pp0" class="play-button"></a>
+                <a data-fancybox href="https://www.youtube.com/watch?v=7ii41wJ9pp0">
+                    <img src="img/videos/prev-3.jpg" alt="">
+                </a>
+
+            </div>
+            <!-- // slider-item -->
+        </div>
+    </section>
+    <!-- // reviews -->
+
+    <!-- jQuery Script  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Owl Carousel slider -->
+    <link rel="stylesheet" href="slider/owl.carousel.min.css">
+    <link rel="stylesheet" href="slider/owl.theme.default.min.css">
+    <script src="slider/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
